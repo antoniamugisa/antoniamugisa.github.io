@@ -89,6 +89,10 @@ nav ul li a:hover::after{
 }
 .about-col-2 p{
     font-size: 20px;
+    line-height: 1.5;
+}
+.about-col-2 p span{
+    color: white;
 }
 .sub-title{
     font-size: 60px;
@@ -97,46 +101,11 @@ nav ul li a:hover::after{
     text-align: center;
     margin-bottom: 20px;
 }
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
-}
-.tab-links{
-    margin-right: 50px;
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #5A279B;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-.tab-links.active-link::after{
-    width: 50%;
-}
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-}
-.tab-contents ul li span{
-    color: #8658BF;
-    font-size: 14px;
-}
-.tab-contents{
-    display: none;
-}
-.tab-contents.active-tab{
-    display: block;
-}
 
-/*----------------------Where I've Worked-----------------*/
+
+
+
+/*----------------------Experiences-----------------*/
 #services{
     padding: 30px 0;
 }
@@ -162,7 +131,11 @@ nav ul li a:hover::after{
 .services-list div h2{
     font-size: 30px;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+}
+.services-list div h3{
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 .services-list div a{
     text-decoration: none;
