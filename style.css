@@ -101,7 +101,11 @@ nav ul li a:hover::after{
     text-align: center;
     margin-bottom: 20px;
 }
-
+ul.tech-list{
+    line-height: 1.5;
+    display: grid;
+    list-style-type: none;
+}
 
 
 
@@ -150,8 +154,8 @@ nav ul li a:hover::after{
 }
 
 
-/*------------------What I've built--------------*/
-#portfolio{
+/*------------------Projects--------------*/
+#projects{
     padding: 50px 0;
 }
 
@@ -230,6 +234,8 @@ nav ul li a:hover::after{
 }
 
 /*--------------Contact-------------*/
+
+
 .contact-left{
     flex-basis: 35%;
 }
