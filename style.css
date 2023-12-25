@@ -103,8 +103,18 @@ nav ul li a:hover::after{
 }
 ul.tech-list{
     line-height: 1.5;
-    display: grid;
     list-style-type: none;
+}
+ul.tech-list i{
+    position: relative;
+    margin-right: 10px;
+    color: #5A279B;
+}
+.about-col-2 ul{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(150px,10px));
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 
