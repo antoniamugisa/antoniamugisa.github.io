@@ -142,7 +142,7 @@ ul.tech-list i{
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
 }
 .experiences-list div i{
