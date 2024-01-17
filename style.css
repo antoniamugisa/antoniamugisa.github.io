@@ -134,50 +134,61 @@ ul.tech-list i{
     padding: 30px 0;
 }
 .experiences-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
-.experiences-list div{
+.exp-col-1{
+    flex-basis: 35%;
+}
+.exp-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 30%;
+}
+.exp-col-2{
+    margin-top: 30px;
     background: #262626;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
+    flex-basis: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
-.experiences-list div i{
-    font-size: 50px;
+.exp-col-2 img{
+    margin-top: -30px;
+    width: 70%;
+    height: 30%;
+}
+.exp-col-2 i{
+    font-size: 40px;
     margin-bottom: 30px;
 }
-.experiences-list div h2{
+.exp-col-2 h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 5px;
 }
-.experiences-list div h3{
+.exp-col-2 h3{
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 5px;
 }
-.experiences-list div h4{
+.exp-col-2 h4{
     margin-bottom: 15px;
 }
-.experiences-list div a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-.experiences-list div:hover{
+.exp-col-2:hover{
     background: #5A279B;
     transform: translateY(-10px);
 }
 ul.exp1_list{
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 .exp1_list li{
     position: relative;
@@ -189,7 +200,11 @@ ul.exp1_list{
     font-size: 20px;
     color: #5A279B;
 }
+
+
 /*------------------Projects--------------*/
+
+
 #projects{
     padding: 50px 0;
 }
@@ -205,15 +220,17 @@ ul.exp1_list{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 .work img{
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     transition: transform 0.5s;
 }
 .layer{
-    width: 50%;
+    width: 100%;
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.6), #5A279B);
     border-radius: 10px;
@@ -252,20 +269,7 @@ ul.exp1_list{
 .work:hover .layer{
     height: 100%;
 }
-.btn {
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #5A279B;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-    transition: background 0.5s;
-}
-.btn:hover{
-    background: #5A279B;
-}
+
 
 /*--------------Contact-------------*/
 
@@ -299,6 +303,21 @@ ul.exp1_list{
     color: #5A279B;
     transform: translateY(-5px);
 }
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #5A279B;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #5A279B;
+}
+
 .btn.btn2{
     display: inline-block;
     background: #5A279B;
