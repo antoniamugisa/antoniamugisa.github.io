@@ -7,9 +7,9 @@ Portfolio website to showcase my experiences and personal projects I have built.
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Black | ![#111315](https://via.placeholder.com/10/0a192f?text=+) #111315 |
-| White | ![#fffff](https://via.placeholder.com/10/f8f8f8?text=+) #fffff|
-| Purple | ![#5A279B](https://via.placeholder.com/10/00b48a?text=+) #5A279B |
-| Off-White| ![#ababab](https://via.placeholder.com/10/00b48a?text=+) #ababab |
+| White | ![#ffffff](https://via.placeholder.com/10/f8f8f8?text=+) #ffffff|
+| Purple | ![#5A279BFF](https://via.placeholder.com/10/00b48a?text=+) #5A279BFF |
+| Off-White| ![#ABABABFF](https://via.placeholder.com/10/00b48a?text=+) #ABABABFF |
 
 
 ## Acknowledgements
