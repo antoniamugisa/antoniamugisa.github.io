@@ -68,12 +68,58 @@ document.addEventListener("DOMContentLoaded", function () {
             (counter.querySelectorAll(".num").length - 1) *
             numHeight;
 
-        gasp.to(counter, {
+        gsap.to(counter, {
             y: -totalDistance,
             duration: duration,
             delay: delay,
             ease: "power2.inOut",
         })
-
     }
+    animate(counter3, 0);
+    animate(document.querySelector(".counter-2"), 6);
+    animate(document.querySelector(".counter-1"), 2, 4);
+
+    gsap.to(".digit", {
+        top: "-150px",
+        stagger: {
+            amount: 0.25,
+        },
+        delay: 6,
+        duration: 1,
+        ease: "power4.inOut",
+    });
+
+    gsap.from(".loader-1", {
+        width: 0,
+        duration: 6,
+        ease: "power2.inOut",
+    });
+
+    gsap.from(".loader-2", {
+        width: 0,
+        delay: 1.9,
+        duration: 6,
+        ease: "power2.inOut",
+    });
+
+    gsap.to(".loader", {
+        background: "none",
+        delay: 6,
+        duration: 0.1,
+    });
+
+    gsap.to(".loader-1", {
+        rotate: 90,
+        y: -50,
+        duration: 0.5,
+        delay: 6,
+    })
+
+    gsap.to(".loader-2", {
+        x: -75,
+        y: 75,
+        duration: 0.5,
+    },
+        "<"
+    );
 })
