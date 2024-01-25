@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.from(".loader-2", {
         width: 0,
         delay: 1.9,
-        duration: 6,
+        duration: 2,
         ease: "power2.inOut",
     });
 
@@ -122,4 +122,29 @@ document.addEventListener("DOMContentLoaded", function () {
     },
         "<"
     );
+
+    gsap.to(".loader", {
+        scale: 40,
+        duration: 1,
+        delay: 7,
+        ease: "power2.inOut"
+    });
+
+    gsap.to(".loader", {
+        rotate: 45,
+        y: 500,
+        x: 2000,
+        duration: 1,
+        delay: 7,
+        ease: "power2.inOut"
+    });
+
+    gsap.to(".loading-screen", {
+        opacity: 0,
+        duration: 0.5,
+        delay: 7.5,
+        ease: "power1.inOut",
+    });
+
+    gsap.to()
 })
