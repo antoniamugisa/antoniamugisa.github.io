@@ -6,6 +6,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="6669a4f985" level="application" />
-    <orderEntry type="library" name="node_modules" level="project" />
+    <orderEntry type="library" name="@types/node" level="application" />
+    <orderEntry type="library" name="@types/mocha" level="application" />
+    <orderEntry type="library" name="@types/express" level="application" />
   </component>
 </module>
