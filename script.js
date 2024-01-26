@@ -42,8 +42,10 @@ window.addEventListener("scroll", function () {
     
 })
 
-var loader = document.getElementById("preloader");
+const preloader = document.querySelector('.preloader');
 
-window.addEventListener("load", function () {
-    loader.style.display = "none";
+document.addEventListener("DOMContentLoaded", (e)=>{
+    setTimeout(()=>{
+        preloader.classList.add('display-none');
+    }, 2000);
 })
