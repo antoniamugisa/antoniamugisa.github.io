@@ -155,6 +155,7 @@ nav ul li a:hover::after{
 ul.tech-list{
     line-height: 1.5;
     list-style-type: none;
+    margin-left: 20px;
 }
 ul.tech-list i{
     position: relative;
@@ -163,7 +164,7 @@ ul.tech-list i{
 }
 .about-col-2 ul{
     display: grid;
-    grid-template-columns: repeat(2,minmax(150px,10px));
+    grid-template-columns: repeat(3,minmax(150px,10px));
     padding-top: 15px;
     padding-bottom: 15px;
 }
