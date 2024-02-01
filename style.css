@@ -75,7 +75,6 @@ nav ul li a:hover::after{
     top: 0;
     left: 0;
     background: #111315;
-    background-size: 20%;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -135,16 +134,20 @@ nav ul li a:hover::after{
     box-shadow: 0 0 50px #5A279B,
                 0 0 100px #5A279B;
 }
+
 .about-col-2{
     flex-basis: 60%;
 }
+
 .about-col-2 p{
     font-size: 20px;
     line-height: 1.5;
 }
+
 .about-col-2 p span{
     color: white;
 }
+
 .sub-title{
     font-size: 60px;
     font-weight: 600;
@@ -152,16 +155,19 @@ nav ul li a:hover::after{
     text-align: center;
     margin-bottom: 30px;
 }
+
 ul.tech-list{
     line-height: 1.5;
     list-style-type: none;
     margin-left: 20px;
 }
+
 ul.tech-list i{
     position: relative;
     margin-right: 10px;
     color: #5A279B;
 }
+
 .about-col-2 ul{
     display: grid;
     grid-template-columns: repeat(3,minmax(150px,10px));
@@ -181,7 +187,7 @@ ul.tech-list i{
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
-.exp-col-2{
+.exp-col-1{
     margin-top: 30px;
     background: #262626;
     padding: 40px;
@@ -193,7 +199,7 @@ ul.tech-list i{
     margin-left: auto;
     margin-right: auto;
 }
-.exp-col-2 img{
+.exp-col-1 img{
     margin-top: -30px;
     width: 70%;
     height: 30%;
@@ -201,25 +207,25 @@ ul.tech-list i{
     margin-left: auto;
     margin-right: auto;
 }
-.exp-col-2 i{
+.exp-col-1 i{
     font-size: 40px;
     margin-bottom: 30px;
 }
-.exp-col-2 h2{
+.exp-col-1 h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 5px;
     text-align: center;
 }
-.exp-col-2 h3{
+.exp-col-1 h3{
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 5px;
 }
-.exp-col-2 h4{
+.exp-col-1 h4{
     margin-bottom: 15px;
 }
-.exp-col-2:hover{
+.exp-col-1:hover{
     background: #5A279B;
     transform: translateY(-10px);
 }
@@ -403,10 +409,14 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px)
  {
+    .preloader{
+        flex-basis: 100%;
+    }
     .header-text{
         margin-top: 50%;
         font-size: 16px;
     }
+
     .header-text h1{
         font-size: 30px;
     }
@@ -423,6 +433,9 @@ nav .fa-solid{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+    }
+    .row {
+        flex-basis: 100%;
     }
     nav ul li{
         display: block;
@@ -447,10 +460,19 @@ nav .fa-solid{
         flex-basis: 100%;
     }
 
-    .tab-links{
-        font-size: 16px;
-        margin-right: 50px;
+    .about-col-2 p{
+        font-size: 14px;
+        flex-basis: 100%;
     }
+
+    .about-col-2 ul {
+        display: block;
+    }
+
+    .experiences-list{
+        flex-basis: 100%;
+    }
+
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
