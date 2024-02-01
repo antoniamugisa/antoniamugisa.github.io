@@ -153,6 +153,7 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: white;
     text-align: center;
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 
@@ -181,42 +182,50 @@ ul.tech-list i{
 #experiences{
     padding: 30px 0;
 }
-.experiences-list{
+.exp{
+    padding: 10px 10%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.experiences-list{
+    width: 100%;
+    max-width: 60%;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 .exp-col-1{
     display: flex;
     margin-top: 30px;
     background: #262626;
-    padding: 40px 50px;
+    padding: 40px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
 }
 .exp-col-1 img{
     width: 40%;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-right: 20px;
 }
 .exp-text {
     display: flex;
     flex-direction: column;
 }
-.exp-text h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 5px;
+.exp-col-1 h2{
+    font-size: 25px;
+    margin-bottom: 4px;
 }
-.exp-text h3{
+.exp-col-1 h3{
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 5px;
+    font-weight: 100;
 }
-.exp-text h4{
+.exp-col-1 h4{
     margin-bottom: 5px;
+    font-weight: 100;
 }
 .exp-col-1:hover{
     background: #5A279B;
@@ -310,7 +319,8 @@ ul.tech-list i{
     font-size: 25px;
 }
 .social-icons{
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-left: 90px;
 }
 .social-icons a{
     text-decoration: none;
@@ -410,9 +420,6 @@ nav .fa-solid{
         padding-top: 50px;
         z-index: 2;
     }
-    .row {
-        flex-basis: 100%;
-    }
     nav ul li{
         display: block;
         margin: 25px;
@@ -444,9 +451,19 @@ nav .fa-solid{
     .about-col-2 ul {
         display: block;
     }
-
     .experiences-list{
-        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .exp-col-1 img{
+        width: 50%;
+        height: 40%;
+        margin-top: 50px;
+    }
+    .exp-col-1 h2{
+        font-size: 20px;
+    }
+    .exp-col-1 h3 h4{
+        font-size: 14px;
     }
 
     .contact-left, .contact-right{
