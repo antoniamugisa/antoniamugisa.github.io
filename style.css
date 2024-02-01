@@ -188,64 +188,40 @@ ul.tech-list i{
     margin-bottom: 30px;
 }
 .exp-col-1{
+    display: flex;
     margin-top: 30px;
     background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
+    padding: 40px 50px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
-    flex-basis: 60%;
-    margin-left: auto;
-    margin-right: auto;
 }
 .exp-col-1 img{
-    margin-top: -30px;
-    width: 70%;
-    height: 30%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 40%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
-.exp-col-1 i{
-    font-size: 40px;
-    margin-bottom: 30px;
+.exp-text {
+    display: flex;
+    flex-direction: column;
 }
-.exp-col-1 h2{
+.exp-text h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 5px;
-    text-align: center;
 }
-.exp-col-1 h3{
+.exp-text h3{
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 5px;
 }
-.exp-col-1 h4{
-    margin-bottom: 15px;
+.exp-text h4{
+    margin-bottom: 5px;
 }
 .exp-col-1:hover{
     background: #5A279B;
     transform: translateY(-10px);
 }
-ul.exp1_list{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-.exp1_list li{
-    position: relative;
-    font-size: 15px;
-}
-.exp1_list li i{
-    position: absolute;
-    left: -25px;
-    font-size: 20px;
-    color: #5A279B;
-}
-
-
 
 /*------------------Projects--------------*/
 
