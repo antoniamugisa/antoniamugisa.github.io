@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0px;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -16,6 +16,7 @@ body{
     height: 100vh;
     background-size: cover;
     background-position: center;
+    margin-top: 80px;
 }
 .container{
     padding: 10px 10%;
@@ -25,6 +26,12 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: #111315;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    z-index: 3;
+    padding: -50px 0;
 }
 .logo{
     width: 140px;
@@ -468,6 +475,7 @@ nav .fa-solid{
 
     .contact-left, .contact-right{
         flex-basis: 100%;
+        flex-direction: column;
     }
     .copyright{
         font-size: 14px;
