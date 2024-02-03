@@ -1,5 +1,6 @@
 *{
-    margin: 0px;
+    margin: 0;
+    border: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -29,9 +30,9 @@ nav{
     background-color: #111315;
     position: fixed;
     top: 0;
-    width: 80%;
+    width: 90%;
     z-index: 3;
-    padding: -50px 0;
+    left: 80px;
 }
 .logo{
     width: 140px;
@@ -80,29 +81,30 @@ nav ul li a:hover::after{
 
 .preloader {
     top: 0;
-    left: 0;
     background: #111315;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 100;
-    text-align: center;
-    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .preloader.display-none {
     opacity: 0;
     top: 0;
-    left: 0;
     background: #111315;
     background-size: 20%;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: -10;
-    text-align: center;
     padding-top: 200px;
     transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes fadeIn {
@@ -121,7 +123,7 @@ nav ul li a:hover::after{
     padding: 70px 0;
     color: #ababab;
 }
-.row{
+.about-row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -310,7 +312,13 @@ ul.tech-list i{
 
 /*--------------Contact-------------*/
 
-
+.contact-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -402,20 +410,22 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px)
  {
-    .preloader{
-        flex-basis: 100%;
-    }
     .header-text{
         margin-top: 50%;
         font-size: 16px;
     }
-
     .header-text h1{
         font-size: 30px;
     }
     nav .fa-solid{
         display: block;
         font-size: 25px;
+    }
+    nav{
+        width: 100%;
+        background-color: #111315;
+        left: 10px;
+        padding-right: 40px;
     }
     nav ul{
         background: #5A279B;
@@ -472,10 +482,8 @@ nav .fa-solid{
     .exp-col-1 h3 h4{
         font-size: 14px;
     }
-
     .contact-left, .contact-right{
         flex-basis: 100%;
-        flex-direction: column;
     }
     .copyright{
         font-size: 14px;
